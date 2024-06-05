@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="w3.css">
+    <script src="bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        .main_section_img{
+            width: 100%;
+            max-width: 300px;
+            max-height: 300px ;
+            text-align: center;
+            align-items: center;
+        }
+        .reverse_section{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+        }
+        @media only screen and (max-width: 900px){
+            .flex-container{
+               margin-bottom: 20px;
+            }
+        }
+        @media only screen and (max-width: 700px)
+        {
+            .reverse_section{
+                flex-direction: column;
+            }
+            .flex-container{
+            flex-direction: column;
+            align-content: center;
+            margin-bottom: 40px;
+        }
+        .main_section_img{
+            width: 100%;
+            max-width: 400px;
+            height: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex">
+        <div class="w3-row d-flex flex-container">
+            <div class="w3-col s6 w3-center align-self-center">
+                <div class="w3-center">
+                    <img class="w3-card-4 main_section_img" src="dustbin.jpg" />
+                </div>
+            </div>
+            <div class="w3-col m6 w3-center align-self-center w3-padding-large">
+                <div class="align-self-center">
+                    <h1>DUSTBINS</h1>
+                    <p>The unassuming dustbin is a vital hero in maintaining a clean and healthy environment. This closed container, often made of metal or plastic, serves as the primary receptacle for our waste.</p>
+                    <button class="w3-btn w3-white w3-border w3-border-red w3-round-large" type="button">View Collections</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex flex-container">
+        <div class="w3-row d-flex reverse_section">
+            <div class="w3-col s6 w3-center align-self-center">
+                <div class="w3-center">
+                    <img class="w3-card-4 main_section_img" src="dustbin.jpg" />
+                </div>
+            </div>
+            <div class="w3-col m6 w3-center align-self-center w3-padding-large">
+                <div class="align-self-center">
+                    <h1>DUSTBINS</h1>
+                    <p>The unassuming dustbin is a vital hero in maintaining a clean and healthy environment. This closed container, often made of metal or plastic, serves as the primary receptacle for our waste.</p>
+                    <button class="w3-btn w3-white w3-border w3-border-red w3-round-large" type="button">View Collections</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex">
+        <div class="w3-row d-flex flex-container">
+            <div class="w3-col s6 w3-center align-self-center">
+                <div class="w3-center">
+                    <img class="w3-card-4 main_section_img" src="dustbin.jpg" />
+                </div>
+            </div>
+            <div class="w3-col m6 w3-center align-self-center w3-padding-large">
+                <div class="align-self-center">
+                    <h1>DUSTBINS</h1>
+                    <p>The unassuming dustbin is a vital hero in maintaining a clean and healthy environment. This closed container, often made of metal or plastic, serves as the primary receptacle for our waste.</p>
+                    <button class="w3-btn w3-white w3-border w3-border-red w3-round-large" type="button">View Collections</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex flex-container">
+        <div class="w3-row d-flex reverse_section">
+            <div class="w3-col s6 w3-center align-self-center">
+                <div class="w3-center">
+                    <img class="w3-card-4 main_section_img" src="dustbin.jpg" />
+                </div>
+            </div>
+            <div class="w3-col m6 w3-center align-self-center w3-padding-large">
+                <div class="align-self-center">
+                    <h1>DUSTBINS</h1>
+                    <p>The unassuming dustbin is a vital hero in maintaining a clean and healthy environment. This closed container, often made of metal or plastic, serves as the primary receptacle for our waste.</p>
+                    <button class="w3-btn w3-white w3-border w3-border-red w3-round-large" type="button">View Collections</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
