@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="w3.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <style>
+        .header {
+            width: 96%;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .header .toggle {
+            display: none;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav ul {
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav ul li {
+            display: flex;
+        }
+
+        .nav ul li a {
+            padding: 10px 10px;
+            margin: 10px 2px;
+            cursor: pointer;
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+        }
+
+        .login a {
+            padding: 12px 14px;
+            background-color: #0d6efd;
+            margin: 4px 4px;
+            border-radius: 10px;
+            color: #ffffff !important;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .login a:hover {
+            background-color: #0b5ed7;
+        }
+
+        .header_fixed {
+            background-color: #ffffff !important;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            transition-timing-function: ease-in-out;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .modal-body ul {
+            display: block;
+            padding: 0px;
+
+        }
+
+        .modal-body ul li {
+            display: block;
+            padding: 0px;
+
+        }
+
+        .modal-body ul li a {
+            width: 100%;
+            padding: 14px 0px;
+            display: flex;
+
+        }
+
+        @media only screen and (max-width: 800px) {
+            .header .toggle {
+                display: block;
+                border: 0px;
+                background-color: transparent;
+            }
+
+            .header .toggle svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+            .flexgrow{
+                flex-grow: 8;
+                display: flex;
+            }
+
+        }
+        @media only screen and (max-width: 400px) {
+            .flexgrow{
+                flex-grow: 0;
+                display: flex;
+            }
+
+        }
+    </style>
+</head>
+
+<body style="background-color: #ccc;">
+
+    <header class="header" id="header">
+        <div class="flexgrow">
+            <h3>Akhil&nbsp;Steels</h3>
+        </div>
+        <div class="nav desktop" id="navbarCollapse">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Catogry</a></li>
+                <li><a>About</a></li>
+                <li><a>Product</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <a>Login</a>
+            <a>Sign&nbsp;In</a>
+        </div>
+        <button class="toggle" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg></span>
+        </button>
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>Catogry</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Product</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 1000px 0px;">&nbsp;</div>
+</body>
+</html>

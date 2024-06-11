@@ -43,146 +43,48 @@
                     <div class="card rounded-3 mb-4">
                         <div class="card-body p-3">
                             <div class="row d-flex justify-content-between align-items-center">
-                                <div class="col-3 col-md-2 col-lg-2 col-xl-2">
+                                <div class="col-3 col-md-2 col-lg-2 col-xl-2 p-1">
                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
                                         class="img-fluid rounded-3" alt="Cotton T-shirt">
                                 </div>
-                                <div class="col-3 col-md-3 col-lg-3 col-xl-3 pad0">
+                                <div class="col-3 col-md-3 col-lg-3 col-xl-3 px-1">
                                     <h5 class="mb-1 mt-1">Basic</h5>
-                                    <h6 class="mb-1 mt-1">500</h6>
+                                    <p class="mb-1 mt-1 fs-6">₹ 500</p>
                                 </div>
                                 <div class="col-3 col-md-3 col-lg-3 col-xl-2 d-flex pad0">
-                                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-1 Cart_a"
+                                    <button style="border-left: 1px solid #ccc; border-radius: 5px 0px 0px 5px; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;" data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-1 Cart_a"
                                         onclick="this.parentNode.querySelector('input[type=number]').stepDown()"> -
                                     </button>
-                                    <input id="form1" min="0" name="quantity" value="2" type="number"
-                                        class="form-control form-control-sm text-center p-1" />
-                                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-1 Cart_a"
+                                    <input style="border-radius: 0px;" id="form1" min="0" name="quantity" value="2" type="number"
+                                        class="form-control form-control-sm text-center p-0" />
+                                    <button style="border-right: 1px solid #ccc; border-radius: 0px 5px 5px 0px; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;" data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-1 Cart_a"
                                         onclick="this.parentNode.querySelector('input[type=number]').stepUp()"> +
                                     </button>
                                 </div>
                                 <div class="col-2 col-md-3 col-lg-2 col-xl-2 offset-lg-1 pad0 text-center">
-                                    <h5>4990</h5>
+                                    <p class="fs-6 align-items-center mb-0">₹ 4990</p>
                                 </div>
                                 <div class="col-1 col-md-1 col-lg-1 col-xl-1 text-center pad0">
-                                    <a href="#!" class="text-danger Cart_a"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                                      </svg></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card rounded-3 mb-4">
-                        <div class="card-body p-3">
-                            <div class="row d-flex justify-content-between align-items-center">
-                                <div class="col-3 col-md-2 col-lg-2 col-xl-2">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                                        class="img-fluid rounded-3" alt="Cotton T-shirt">
-                                </div>
-                                <div class="col-3 col-md-3 col-lg-3 col-xl-3 pad0">
-                                    <h5 class="mb-1 mt-1">Basic</h5>
-                                    <h6 class="mb-1 mt-1">500</h6>
-                                </div>
-                                <div class="col-3 col-md-3 col-lg-3 col-xl-2 d-flex pad0">
-                                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-1 Cart_a"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"> -
-                                    </button>
-                                    <input id="form1" min="0" name="quantity" value="2" type="number"
-                                        class="form-control form-control-sm text-center p-1" />
-                                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-1 Cart_a"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"> +
-                                    </button>
-                                </div>
-                                <div class="col-2 col-md-3 col-lg-2 col-xl-2 offset-lg-1 pad0 text-center">
-                                    <h5>4990</h5>
-                                </div>
-                                <div class="col-1 col-md-1 col-lg-1 col-xl-1 text-center pad0">
-                                    <a href="#!" class="text-danger Cart_a"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                                      </svg></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card rounded-3 mb-4">
-                        <div class="card-body p-3">
-                            <div class="row d-flex justify-content-between align-items-center">
-                                <div class="col-3 col-md-2 col-lg-2 col-xl-2">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                                        class="img-fluid rounded-3" alt="Cotton T-shirt">
-                                </div>
-                                <div class="col-3 col-md-3 col-lg-3 col-xl-3 pad0">
-                                    <h5 class="mb-1 mt-1">Basic</h5>
-                                    <h6 class="mb-1 mt-1">500</h6>
-                                </div>
-                                <div class="col-3 col-md-3 col-lg-3 col-xl-2 d-flex pad0">
-                                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-1 Cart_a"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"> -
-                                    </button>
-                                    <input id="form1" min="0" name="quantity" value="2" type="number"
-                                        class="form-control form-control-sm text-center p-1" />
-                                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-1 Cart_a"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"> +
-                                    </button>
-                                </div>
-                                <div class="col-2 col-md-3 col-lg-2 col-xl-2 offset-lg-1 pad0 text-center">
-                                    <h5>4990</h5>
-                                </div>
-                                <div class="col-1 col-md-1 col-lg-1 col-xl-1 text-center pad0">
-                                    <a href="#!" class="text-danger Cart_a"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                                      </svg></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card rounded-3 mb-4">
-                        <div class="card-body p-3">
-                            <div class="row d-flex justify-content-between align-items-center">
-                                <div class="col-3 col-md-2 col-lg-2 col-xl-2">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                                        class="img-fluid rounded-3" alt="Cotton T-shirt">
-                                </div>
-                                <div class="col-3 col-md-3 col-lg-3 col-xl-3 pad0">
-                                    <h5 class="mb-1 mt-1">Basic</h5>
-                                    <h6 class="mb-1 mt-1">500</h6>
-                                </div>
-                                <div class="col-3 col-md-3 col-lg-3 col-xl-2 d-flex pad0">
-                                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-1 Cart_a"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"> -
-                                    </button>
-                                    <input id="form1" min="0" name="quantity" value="2" type="number"
-                                        class="form-control form-control-sm text-center p-1" />
-                                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-1 Cart_a"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"> +
-                                    </button>
-                                </div>
-                                <div class="col-2 col-md-3 col-lg-2 col-xl-2 offset-lg-1 pad0 text-center">
-                                    <h5>4990</h5>
-                                </div>
-                                <div class="col-1 col-md-1 col-lg-1 col-xl-1 text-center pad0">
-                                    <a href="#!" class="text-danger Cart_a"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                                      </svg></a>
+                                    <a href="#!" class="text-danger Cart_a"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="16" fill="currentColor" class="bi bi-trash"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                        </svg></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
-                        <div class="card-body d-flex justify-content-between">
+                        <div class="card-body d-flex justify-content-between px-2">
                             <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                class="btn btn-warning btn-block btn-lg px-2">Proceed to Pay</button>
+                                class="btn btn-warning btn-block btn-lg px-2 fs-6">Proceed to Pay</button>
 
-                                <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                class="btn btn-success btn-block btn-lg px-2">Cart Total</button>
+                            <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                class="btn btn-success btn-block btn-lg px-2 fs-6">Cart Total</button>
                         </div>
                     </div>
 
