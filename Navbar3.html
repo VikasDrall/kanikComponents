@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="w3.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <style>
+        .navbar_fixed {
+            background-color: #ffffff !important;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            display: block;
+            transition: top 0.30s;
+        }
+
+        #header {
+            background-color: transparent;
+        }
+        .mobile_navlogin{display: none;}
+        .desktop_navlogin{display: block;}
+        @media only screen and (max-width: 1200px) {
+            .mobile_navlogin{display: block;}
+            .desktop_navlogin{display: none;}
+}
+    </style>
+</head>
+
+<body style="background-color: #ccc;">
+    <header>
+        <div class="container-fluid sticky-top px-0" style="top: -00px;" id="header">
+            <div class="container-fluid">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl" id="navBar">
+                        <a href="index.html" class="navbar-brand">
+                            <h4 class="mb-0">Steels</h4>
+                        </a>
+                        <div class="d-flex">
+                            <div class="mobile_navlogin me-3">
+                                <div class="d-flex justify-content-end">
+                                    <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                        <a href="#"
+                                            class="btn btn-primary btn-primary-outline-0 py-2 px-2 ms-0">Login</a>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-nowrap pt-xl-0 me-2">
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 py-2 px-2 ms-4">Sign
+                                            up</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="navbar-toggler py-2 px-3 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarCollapse" aria-expanded="false">
+                                <span class="fa fa-bars text-primary"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse py-3 collapse mx-3" id="navbarCollapse" style="">
+                            <div class="navbar-nav d-flex justify-content-between m-auto">
+                                <a href="#" class="nav-item nav-link mx-2 active">Home</a>
+                                <a href="#" class="nav-item nav-link mx-2">About</a>
+                                <a href="#" class="nav-item nav-link mx-2">Catogry</a>
+                                <a href="#" class="nav-item nav-link mx-2">product</a>
+                            </div>
+                        </div>
+                        <div class="desktop_navlogin">
+                            <div class="d-flex justify-content-end">
+                                <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                    <a href="#"
+                                        class="btn btn-primary btn-primary-outline-0 py-2 px-2 ms-0">Login</a>
+                                </div>
+                                <div class="d-flex align-items-center flex-nowrap pt-xl-0 me-2">
+                                    <a href="#" class="btn btn-primary btn-primary-outline-0 py-2 px-2 ms-4">Sign
+                                        up</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div style="padding: 1000px 0px;">&nbsp;</div>
+
+
+
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#header').addClass('navbar_fixed');
+            } else {
+                $('#header').removeClass('navbar_fixed');
+            }
+        });
+    </script>
+</body>
+
+</html>
