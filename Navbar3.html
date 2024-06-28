@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!---<link rel="stylesheet" href="w3.css"> --->
     <script src="bootstrap.min.js"></script>
     <script src="jquery.min.js"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <style>
         .navbar_fixed {
             background-color: #ffffff !important;
@@ -23,7 +23,9 @@
         #header {
             background-color: #ffffff;
         }
-
+        .brand_logo{
+            width: 40px;
+        }
         .mobile_navlogin {
             display: none;
         }
@@ -38,22 +40,54 @@
             background: #ffffff;
             width: auto;
         }
+        .icons-list{
+            position: relative;
+        }
+        .icons-list i{
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 30px;
+            color: #000000;
+        }
+        .icons-list span{
+            position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #0059fd;
+    color: #ffffff;
+    border-radius: 100%;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 5px 2px;
+    width: 30px;
+    text-align: center;
+        }
+
+/**/
+        .icons-list i:hover{
+            color: #484848;
+        }
 
         @media only screen and (max-width: 1200px) {
             .mobile_navlogin {
                 display: block;
             }
+
             .desktop_navlogin {
                 display: none;
             }
+/*When change hight of nav bar plz also change margin top*/
             .toggle_navbar {
-            position: absolute;
-            margin-top: 58px;
-            background: #ffffff;
-            width: 100%;
-            top: 0px;
+                position: absolute;
+                margin-top: 70px;
+                background: #ffffff;
+                width: 100%;
+                top: 0px;
+            }
         }
-        }
+    .uu{
+        height: 70px;
+    }    
     </style>
 </head>
 
@@ -61,29 +95,30 @@
     <header>
         <div class="sticky-top px-0" style="top: -00px;" id="header">
             <div class=" px-0">
-                <nav class="navbar navbar-light navbar-expand-xl" id="navBar">
+                <nav class="navbar navbar-light navbar-expand-xl py-0 uu" id="navBar">
                     <a href="index.html" class="navbar-brand ms-3">
-                        <h4 class="mb-0">Steels</h4>
+                        <h4 class="mb-0 desktop_navlogin">Steels</h4>
+                        <img class="mobile_navlogin brand_logo" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="" />
                     </a>
                     <div class="d-flex">
                         <div class="mobile_navlogin me-3">
                             <div class="d-flex justify-content-end">
                                 <div class="d-flex align-items-center flex-nowrap pt-xl-0">
-                                    <a href="#" class="btn btn-primary btn-primary-outline-0 py-2 px-2 ms-0">Login</a>
+                                    <a href="#" class="py-1 px-1 ms-0 icons-list"><i class="bi bi-person-circle"></i></a>
                                 </div>
                                 <div class="d-flex align-items-center flex-nowrap pt-xl-0 me-2">
-                                    <a href="#" class="btn btn-primary btn-primary-outline-0 py-2 px-2 ms-4">Sign
-                                        up</a>
+                                    <a href="#" class="py-1 px-1 ms-4 icons-list"> <i class="bi bi-cart2"></i>
+                                    <span>999</span></a>
                                 </div>
                             </div>
                         </div>
-                        <button class="navbar-toggler py-2 px-3 collapsed me-3" type="button" data-bs-toggle="collapse"
+                        <button class="navbar-toggler py-0 px-2 collapsed me-3 icons-list" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarCollapse" aria-expanded="false">
-                            <span class="fa fa-bars text-primary"></span>
+                            <i class="bi bi-list"></i>
                         </button>
                     </div>
 
-                    <div class="navbar-collapse py-3 collapse toggle_navbar" id="navbarCollapse" style="">
+                    <div class="navbar-collapse py-1 collapse toggle_navbar" id="navbarCollapse" style="">
                         <div class="navbar-nav d-flex justify-content-between m-auto">
                             <a href="#" class="nav-item nav-link mx-2 active">Home</a>
                             <a href="#" class="nav-item nav-link mx-2">About</a>
@@ -94,11 +129,11 @@
                     <div class="desktop_navlogin">
                         <div class="d-flex justify-content-end">
                             <div class="d-flex align-items-center flex-nowrap pt-xl-0">
-                                <a href="#" class="btn btn-primary btn-primary-outline-0 py-2 px-2 ms-0">Login</a>
+                                <a href="#" class="py-1 px-1 ms-0 icons-list"><i class="bi bi-person-circle"></i></a>
                             </div>
                             <div class="d-flex align-items-center flex-nowrap pt-xl-0 me-3">
-                                <a href="#" class="btn btn-primary btn-primary-outline-0 py-2 px-2 ms-4">Sign
-                                    up</a>
+                                <a href="#" class="py-1 px-1 ms-4 icons-list"><i class="bi bi-cart2"></i>
+                                    <span>999</span></a>
                             </div>
                         </div>
                     </div>
@@ -107,20 +142,9 @@
             </div>
         </div>
     </header>
-
-    <div style="padding: 0px 0px 1000px 0px;">kjsdhfak;dshvqpiernvpiqenvlkadjnvlaisdhvpi vpiuev</div>
-
-
-
-    <script>
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#header').addClass('navbar_fixed');
-            } else {
-                $('#header').removeClass('navbar_fixed');
-            }
-        });
-    </script>
+ 
+    <div style="padding: 0px 0px 1000px 0px;">kj sdh fak;ds hvqpiernv iqenvlkadj nvlaisdhvpi vpiuev</div>
+ 
 </body>
 
 </html>
